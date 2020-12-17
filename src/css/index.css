@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: black;
+  }
+  
+.header-container {
+  min-height: 50px;
+  background-color: grey;
+  color: white;
+  }
+
+.product-img {
+  width: 100px;
+  height: 100px;
+  border: solid 2px;
+  box-sizing: border-box;
+}
+
+.cart-img {
+  width: 50px;
+  height: 50px;
+  border: solid 2px;
+  box-sizing: border-box;
+}
+
+.content-container {
+  width: 100%;
+  display: flex;
+}
+.left-container {
+  width: 70%;
+}
+.right-container {
+  width: 30%;
+}
