@@ -1,6 +1,7 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import {removeToCart} from '../actions';
+import { removeToCart } from '../actions';
+import { Button } from 'react-bootstrap';
 
 const Cart = () => {
     const cart = useSelector(state => state.cartReducer.cartItems);
@@ -9,11 +10,13 @@ const Cart = () => {
         <>
             {cart.map((item) => {
                 return (
-                    <div>
-                        {item.id} : {item.price} : <img src={item.imageUrl} alt="product" className="cart-img" />
-                        <button onClick={() => dispatch(removeToCart(item))}>Remove</button>
+                    <div className="cart-container">
+                        <img className="cart-img" variant="top" src={item.imageUrl} alt="" />
+                        <p>Price: {item.price}</p>
+                        <b>Name: {item.name}</b>
+                        <Button variant="danger" onClick={() => dispatch(removeToCart(item))}>Remove</Button>
                     </div>
-                    );
+                );
             })}
         </>
     );

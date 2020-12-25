@@ -1,21 +1,19 @@
 import React from 'react';
-import Header from './header';
-import ProductList from './productList';
-import Cart from './cart';
+import NavbarHeader from '../Layout/navbar';
+import LeftContent from '../Layout/leftContent';
+import MiddleContent from '../Layout/middleContent';
+import RightContent from '../Layout/rightContent';
 
 
 const Home = () => {
 
     return (
         <div>
-            < Header />
-            <div className='content-container'>
-                <div className='left-container'>
-                    < ProductList />
-                </div>
-                <div className='rigth-container'>
-                    < Cart />
-                </div>
+            < NavbarHeader />
+            <div className="content">
+                <LeftContent />
+                <MiddleContent />
+                <RightContent />
             </div>
         </div>
 

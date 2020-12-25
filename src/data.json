@@ -1,22 +1,38 @@
 [
     {
         "id": 1,
-        "price": 100,
-        "imageUrl": "../images/phone.jpg"
+        "name": "SAMSUNG GALAXY A51",
+        "price": 299,
+        "imageUrl": "../images/phone-1.jpg"
     },
     {
         "id": 2,
-        "price": 200,
+        "name": "SAMSUNG GALAXY S20 ",
+        "price": 600,
         "imageUrl": "../images/phone-2.png"
     },
     {
         "id": 3,
-        "price": 300,
-        "imageUrl": "../images/phone.jpg"
+        "name": "SAMSUNG GALAXY XCOVER PRO 64",
+        "price": 400,
+        "imageUrl": "../images/phone-3.png"
     },
     {
         "id": 4,
-        "price": 400,
-        "imageUrl": "../images/phone-3.jpg"
+        "name": "APPLE IPHONE 12 128 GT",
+        "price": 879,
+        "imageUrl": "../images/phone-4.jpg"
+    },
+    {
+        "id": 5,
+        "name": "APPLE IPHONE 12 MINI 256",
+        "price": 999,
+        "imageUrl": "../images/phone-5.jpg"
+    },
+    {
+        "id": 6,
+        "name": "APPLE IPHONE 12 PRO 128 GT",
+        "price": 1179,
+        "imageUrl": "../images/phone-2.png"
     }
 ]
