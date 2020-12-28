@@ -1,18 +1,17 @@
 import React from 'react';
-import Data from '../data.json';
-import { useDispatch } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 import { addToCart } from '../actions';
 import { Card, Button } from 'react-bootstrap';
 
 const ProductList = () => {
-
+    const searchData = useSelector(state => state.productDataReducer.productData)
     const dispatch = useDispatch()
     return (
         <>
             <div className="product-container">
-                {Data.map(item => {
+                {searchData.map(item => {
                     return (
-                        <div className="card-container">
+                        <div className="card-container" key={item.id}>
                             <Card >
                                 <div className="product-image">
                                     <img src={item.imageUrl} alt="" />

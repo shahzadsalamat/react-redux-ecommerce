@@ -15,3 +15,12 @@ export const removeToCart = (data) => {
         }
     );
 }
+
+export const searchProduct = (searchKeyword) => {
+    return (
+        {
+            type: 'SEARCH-PRODUCT-BY-KEYWORD',
+            searchKeyword: searchKeyword
+        }
+    );
+}

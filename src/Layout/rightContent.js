@@ -2,6 +2,7 @@ import React from 'react';
 import Cart from '../components/cart';
 import { Button } from 'react-bootstrap';
 import { useSelector } from 'react-redux';
+import { Link } from 'react-router-dom';
 
 
 const RightContent = () => {
@@ -9,9 +10,11 @@ const RightContent = () => {
     return (
         <div className="right-content">
             <b>Your Cart</b>
-            < Cart/>
+            < Cart />
             {cart.length > 0 ?
-                <Button variant="primary" >Checkout</Button>
+                <Link to="../components/cart-page.js">
+                    <Button variant="primary">check out</Button>
+                </Link>
                 :
                 <p>No item in the cart</p>
             }

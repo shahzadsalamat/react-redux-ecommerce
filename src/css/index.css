@@ -77,6 +77,12 @@ flex-flow: nowrap column;
 align-items: center;
   }
 
+  /**for navbar link, color white**/
+
+  .navbar-dark .navbar-nav .nav-link a {
+    color: white;
+}
+
 
 
 
