@@ -1,9 +1,10 @@
 import React from 'react';
+import ProductSearchByType from '../components/product-search-by-type';
 
 const LeftContent = () => {
     return (
         <div className="left-content">
-            <p>i am leftconent</p>
+            <ProductSearchByType />
         </div>
     );
 }

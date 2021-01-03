@@ -24,3 +24,12 @@ export const searchProduct = (searchKeyword) => {
         }
     );
 }
+
+export const searchProductByType = (searchKeyword) => {
+    return (
+        {
+            type: 'SEARCH-PRODUCT-BY-TYPE',
+            searchKeyword: searchKeyword
+        }
+    );
+}

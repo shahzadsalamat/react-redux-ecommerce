@@ -15,19 +15,22 @@ const NavbarHeader = () => {
         <div>
             <Navbar bg="dark" variant="dark">
                 <Nav className="mr-auto">
-                    <Nav.Link><Link  to="/">Home</Link></Nav.Link>
-                    <Nav.Link><Link  to="../components/cart-page.js">Your Cart ({cart.length})</Link></Nav.Link>
+                    <Nav.Link as={Link} to="/">Home</Nav.Link>
+                    <Nav.Link as={Link} to="../components/cart-page.js">Your Cart ({cart.length})</Nav.Link>
                 </Nav>
-                <Form inline>
+                <Form inline onSubmit={(e) =>  e.preventDefault()}>
                     <FormControl
                         type="text" 
-                        placeholder="Search"
+                        placeholder="Search By Product Name"
                         name="search"
                         className="mr-sm-2" 
                         value={searchKeyword}
                         onChange={(e) => {setSearchKeyWord(e.target.value)}}
                     />
-                    <Button variant="outline-info" onClick={(e) => dispatch(searchProduct(searchKeyword))}>Search</Button>
+                    <Button 
+                    variant="outline-info" 
+                    onClick={(e) => dispatch(searchProduct(searchKeyword))}
+                    >Search</Button>
                 </Form>
             </Navbar>
         </div>

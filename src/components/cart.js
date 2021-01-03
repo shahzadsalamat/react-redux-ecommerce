@@ -10,11 +10,21 @@ const Cart = () => {
         <>
             {cart.map((item) => {
                 return (
-                    <div className="cart-container">
-                        <img className="cart-img" variant="top" src={item.imageUrl} alt="" />
-                        <p>Price: {item.price}</p>
-                        <b>Name: {item.name}</b>
-                        <Button variant="danger" onClick={() => dispatch(removeToCart(item))}>Remove</Button>
+                    <div >
+                        <div className="side-menu-cart-page-container">
+                            <div className="side-menu-cart-item-container">
+                                <div className="side-menu-cart-item-image-wrapper">
+                                    <img src={item.imageUrl} alt="" />
+                                </div>
+                                <div className="side-menu-cart-item-details-wrapper">
+                                    <div><strong>{item.name}</strong></div>
+                                    <div><strong>price: </strong>{item.price}</div>
+                                </div>
+                            </div>
+                            <Button variant="danger" onClick={() => dispatch(removeToCart(item))}>Remove</Button>
+
+                            <hr></hr>
+                        </div>
                     </div>
                 );
             })}

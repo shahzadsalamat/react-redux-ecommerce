@@ -20,9 +20,10 @@ const ProductList = () => {
                                     <Card.Title><p>Price: {item.price}</p></Card.Title>
                                     <Card.Text>
                                         <b>{item.name}</b>
-                                    </Card.Text>
-                                    <Button variant="primary" onClick={() => dispatch(addToCart(item))}>Add To Cart</Button>
+                                    </Card.Text>                                    
                                 </Card.Body>
+                                <Button className="card-button" variant="primary" onClick={() => dispatch(addToCart(item))}>Add To Cart</Button>
+
                             </Card>
 
                         </div>

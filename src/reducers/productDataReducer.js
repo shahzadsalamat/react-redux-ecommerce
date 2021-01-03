@@ -24,6 +24,25 @@ const ProductDataReducer = (state = initialState, action)  => {
                     )
                 ]
                 }
+        case 'SEARCH-PRODUCT-BY-TYPE':
+            state = initialState
+            return {
+                productData: [
+                    ...state.productData.filter(
+                        product => {
+                            if (action.searchKeyword === ''){
+                                return state
+                            } 
+                            else if (action.searchKeyword.toLowerCase().includes(product.type.toLowerCase()) ) {
+                                return product
+                            }
+                            else {
+                                return null
+                            }
+                        }
+                    )
+                ]
+            }
                                  
             
             default:
