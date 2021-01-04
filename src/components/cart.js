@@ -5,9 +5,11 @@ import { Button } from 'react-bootstrap';
 
 const Cart = () => {
     const cart = useSelector(state => state.cartReducer.cartItems);
+
     const dispatch = useDispatch();
+
     return (
-        <>
+        <div>
             {cart.map((item) => {
                 return (
                     <div >
@@ -28,7 +30,7 @@ const Cart = () => {
                     </div>
                 );
             })}
-        </>
+        </div>
     );
 }
 

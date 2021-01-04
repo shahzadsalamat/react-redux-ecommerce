@@ -4,10 +4,12 @@ import { addToCart } from '../actions';
 import { Card, Button } from 'react-bootstrap';
 
 const ProductList = () => {
-    const searchData = useSelector(state => state.productDataReducer.productData)
+    const searchData = useSelector(state => state.productDataReducer.productData);
+
     const dispatch = useDispatch()
+
     return (
-        <>
+        <div>
             <div className="product-container">
                 {searchData.map(item => {
                     return (
@@ -23,14 +25,12 @@ const ProductList = () => {
                                     </Card.Text>                                    
                                 </Card.Body>
                                 <Button className="card-button" variant="primary" onClick={() => dispatch(addToCart(item))}>Add To Cart</Button>
-
                             </Card>
-
                         </div>
                     );
                 })}
             </div>
-        </>
+        </div>
     );
 }
 

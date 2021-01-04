@@ -4,7 +4,6 @@ import LeftContent from '../Layout/leftContent';
 import MiddleContent from '../Layout/middleContent';
 import RightContent from '../Layout/rightContent';
 
-
 const Home = () => {
 
     return (
@@ -18,7 +17,6 @@ const Home = () => {
         </div>
 
     );
-
 }
 
 export default Home;

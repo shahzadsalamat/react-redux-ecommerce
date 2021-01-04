@@ -7,6 +7,14 @@ body {
   height: 100vh;
 }
 
+.text-align-center{
+  text-align: center;
+}
+
+.padding-top-20px{
+  padding-top: 20px;
+}
+
 .content {
   width: 100%;
   display: flex;
@@ -55,7 +63,6 @@ body {
 }
 
 /***fix card button ***/
-
 .card-button {
   margin-bottom: 20px;
   width: 140px;
@@ -68,41 +75,40 @@ body {
   height: 350px;
 }
 .card-container:hover {
-    box-shadow: 2px 2px 2px 2px gray;
-    opacity: 10;
-    cursor: pointer;
-  }
-  .card-container .card {
-    height: 100%;
-  }
+  box-shadow: 2px 2px 2px 2px gray;
+  opacity: 10;
+  cursor: pointer;
+}
 
-  .cart-container {
-    margin: 24px;
-box-sizing: border-box;
-border: 1px solid;
-padding: 15px;
-display: flex;
-flex-flow: nowrap column;
-align-items: center;
-  }
+.card-container .card {
+  height: 100%;
+}
 
-  /**for navbar link, color white**/
+.cart-container {
+  margin: 24px;
+  box-sizing: border-box;
+  border: 1px solid;
+  padding: 15px;
+  display: flex;
+  flex-flow: nowrap column;
+  align-items: center;
+}
 
-  .navbar-dark .navbar-nav .nav-link a {
-    color: white;
+/**for navbar link, color white**/
+.navbar-dark .navbar-nav .nav-link a {
+ color: white;
 }
 
 /*** cart-page **/
-
 .cart-page-container{
-  width: 100%;
-  
+  width: 100%; 
 }
 
 .cart-item-container{
   display: flex;
   justify-content: center;
 }
+
 .cart-item-image-wrapper{
   width: 100px;
   height: 120px;
@@ -114,6 +120,7 @@ align-items: center;
   object-fit: contain;
   margin: 10px 0px 10px 0;
 }
+
 .cart-item-details-wrapper {
     display: flex;
     flex-direction: column;
@@ -121,17 +128,20 @@ align-items: center;
     justify-content: center;
 }
 
-/*** cart-page **/
+.cart-page-container hr {
+  width: 50%; 
+}
 
+/*** cart-page **/
 .side-menu-cart-page-container{
   width: 100%;
-  
 }
 
 .side-menu-cart-item-container{
   display: flex;
   justify-content: center;
 }
+
 .side-menu-cart-item-image-wrapper{
   width: 60px;
   height: 80px;
@@ -143,19 +153,18 @@ align-items: center;
   object-fit: contain;
   margin: 10px 0px 10px 0;
 }
+
 .side-menu-cart-item-details-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 /***left side page- product search by type***/
-
 .product-search-by-type-container {
   display: flex;
   flex-direction: column;
   padding-top: 20px;
   align-items: center;
 }
-

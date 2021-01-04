@@ -12,26 +12,17 @@ const ProductSearchByType = () => {
 
     const handleClick = (e) => {
         const { name, checked } = e.target;
-
         setSearchedOptions(
             {
                 ...searchedOptions,
                 [name]: checked
             })
-
-
     }
 
     useEffect(() => {
-
         const displaySelectedOption = Object.keys(searchedOptions).filter((x) => searchedOptions[x]);
-
-        console.log('searchword:', displaySelectedOption.toString().replace(",", " "));
-
         dispatch(searchProductByType(displaySelectedOption.toString().replace(",", " ")));
-
-    })
-
+    });
 
     return (
         <div className="product-search-by-type-container">
