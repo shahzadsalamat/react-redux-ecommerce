@@ -11,7 +11,7 @@ const RightContent = () => {
             <b>Your Cart</b>
             < Cart />
             {cart.length > 0 ?
-                <Link to="../components/cart-page.js">
+                <Link to="../react-redux-ecommerce/components/cart-page.js">
                     <Button variant="primary">check out</Button>
                 </Link>
                 :

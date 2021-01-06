@@ -16,7 +16,7 @@ const ProductList = () => {
                         <div className="card-container" key={item.id}>
                             <Card >
                                 <div className="product-image">
-                                    <img src={item.imageUrl} alt="" />
+                                    <img src={window.location + item.imageUrl} alt="" />
                                 </div>
                                 <Card.Body>
                                     <Card.Title><p>Price: {item.price}</p></Card.Title>

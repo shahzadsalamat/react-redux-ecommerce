@@ -9,16 +9,15 @@ const NavbarHeader = () => {
     const cart = useSelector(state => state.cartReducer.cartItems);
     const [searchKeyword, setSearchKeyWord] = useState('')
     const dispatch = useDispatch();
-    const currentPath = window.location.pathname;
 
     return (
         <div>
             <Navbar bg="dark" variant="dark">
                 <Nav className="mr-auto">
-                    <Nav.Link as={Link} to="/">Home</Nav.Link>
-                    <Nav.Link as={Link} to="../components/cart-page.js">Your Cart ({cart.length})</Nav.Link>
+                    <Nav.Link as={Link} to="/react-redux-ecommerce/">Home</Nav.Link>
+                    <Nav.Link as={Link} to="../react-redux-ecommerce/components/cart-page.js">Your Cart ({cart.length})</Nav.Link>
                 </Nav>
-                {!currentPath.match('./')
+                {(window.location.pathname === '/react-redux-ecommerce/')
                     ?
                     <Form inline onSubmit={(e) => e.preventDefault()}>
                         <FormControl

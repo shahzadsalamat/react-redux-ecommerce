@@ -16,7 +16,7 @@ const Cart = () => {
                         <div className="side-menu-cart-page-container">
                             <div className="side-menu-cart-item-container">
                                 <div className="side-menu-cart-item-image-wrapper">
-                                    <img src={item.imageUrl} alt="" />
+                                    <img src={window.location + item.imageUrl} alt="" />
                                 </div>
                                 <div className="side-menu-cart-item-details-wrapper">
                                     <div><strong>{item.name}</strong></div>

@@ -26,7 +26,7 @@ const CartPage = () => {
                         <div className="cart-page-container padding-top-20px">
                             <div className="cart-item-container">
                                 <div className="cart-item-image-wrapper">
-                                    <img src={item.imageUrl} alt="" />
+                                    <img src={'..' + item.imageUrl} alt="" />
                                 </div>
                                 <div className="cart-item-details-wrapper">
                                     <div><strong>Product Name: </strong>{item.name}</div>

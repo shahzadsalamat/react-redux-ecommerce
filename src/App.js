@@ -12,10 +12,10 @@ const App = () => {
     <div>
       <Router>
         <Switch>
-          <Route exact path="/" component={Home} />
-          <Route path="/components/cart-page.js" component={CartPage} />
-          <Route path="/components/thankyou-page.js" component={ThankYouPage} />
-          <Route path="/components/cart-page.js" component={CartPage} />
+          <Route exact path="/react-redux-ecommerce" component={Home} />
+          <Route path="/react-redux-ecommerce/components/cart-page.js" component={CartPage} />
+          <Route path="/react-redux-ecommerce/components/thankyou-page.js" component={ThankYouPage} />
+          <Route path="/react-redux-ecommerce/components/cart-page.js" component={CartPage} />
           <Route component={PageNotFound} />
         </Switch>
       </Router>
