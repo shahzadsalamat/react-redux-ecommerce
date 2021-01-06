@@ -4,4 +4,8 @@ Introduction: In this project user can do online shopping.
 
 LIVE DEMO: https://shahzadsalamat.github.io/react-redux-ecommerce/
 
-Techonolgies: HTML, CSS  React: react redux, react hooks.
+Techonolgies: 
+HTML
+CSS
+ReactJs: 
+  react hooks, react redux, react boostrap.
